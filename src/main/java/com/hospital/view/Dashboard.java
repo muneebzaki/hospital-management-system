@@ -214,7 +214,7 @@ public class Dashboard extends JFrame {
         });
     }
     
-    private void showWelcomePanel() {
+    void showWelcomePanel() {
         contentPanel.removeAll();
         
         JPanel welcomePanel = new JPanel(new BorderLayout());
@@ -246,7 +246,7 @@ public class Dashboard extends JFrame {
         contentPanel.repaint();
     }
     
-    private void showPatientForm(Integer patientId) {
+    void showPatientForm(Integer patientId) {
         contentPanel.removeAll();
         PatientForm patientForm = new PatientForm(this, patientId);
         contentPanel.add(patientForm);
@@ -262,7 +262,7 @@ public class Dashboard extends JFrame {
         contentPanel.repaint();
     }
     
-    private void showAppointmentForm(Integer appointmentId) {
+    void showAppointmentForm(Integer appointmentId) {
         contentPanel.removeAll();
         AppointmentForm appointmentForm = new AppointmentForm(this, appointmentId);
         contentPanel.add(appointmentForm);
@@ -270,7 +270,7 @@ public class Dashboard extends JFrame {
         contentPanel.repaint();
     }
     
-    private void showAppointmentList() {
+    public void showAppointmentList() {
         contentPanel.removeAll();
         AppointmentList appointmentList = new AppointmentList(this);
         contentPanel.add(appointmentList);
